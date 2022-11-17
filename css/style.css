@@ -13,3 +13,52 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+/*------------------
+    COMMON
+-------------------*/
+body {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to top, #d5dbd8 85%, #009688 15%);
+}
+.page-container {
+    display: flex;
+    max-width: 80rem;
+    width: 100%;
+    height: calc(100% - 3rem);
+    margin: auto;
+    background-color: #fff;
+}
+.box-header {
+    height: 4.375rem;
+    background-color: #eaeaea;
+}
+/*------------------
+    ASIDE
+-------------------*/
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid #d6d6d6;
+}
+
+/*------------------
+    MAIN
+-------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+.chat-container {
+    flex-grow: 1;
+    background-image: url('../img/mine.jpg');
+}
+.footer-current-chat {
+    height: 4.375rem;
+    background-color: #f3eeea;
+}
