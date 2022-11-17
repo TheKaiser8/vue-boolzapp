@@ -25,7 +25,9 @@
 
 <body>
     <div id="app" class="page-container">
+        <!-- Aside con lista chat -->
         <aside>
+            <!-- Header navigazione utente -->
             <header class="box-header header-chats">
                 <div class="user-avatar">
                     <img class="img-avatar" src="img/avatar_io.jpg" alt="Stefano">
@@ -39,6 +41,8 @@
                     </ul>
                 </div>
             </header>
+            <!-- /Header navigazione utente -->
+            <!-- Banner -->
             <div class="banner">
                 <div class="box-alert-icon">
                     <a href="#"><i id="alert-icon" class="fa-solid fa-bell-slash"></i></a>
@@ -48,7 +52,16 @@
                     <a href="#" class="banner-text__link">Attiva notifiche desktop</a>
                 </div>
             </div>
+            <!-- /Banner -->
+            <!-- Form cerca chat -->
+            <form class="search-bar" role="search">
+                <div class="search-bar__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="search" class="search-bar__input" placeholder="Cerca o inizia una nuova chat">
+            </form>
+            <!-- /Form cerca chat -->
         </aside>
+        <!-- /Aside con lista chat -->
+        <!-- Main con chat attiva -->
         <main>
             <header class="box-header header-current-chat"></header>
             <div class="chat-container">
@@ -56,6 +69,7 @@
             </div>
             <footer class="footer-current-chat"></footer>
         </main>
+        <!-- /Main con chat attiva -->
     </div>
     <script src="js/main.js"></script>
 </body>
