@@ -16,6 +16,11 @@ body {
 .list-inline a {
     font-size: 1.2rem;
 }
+#alert-icon {
+    font-size: 1.2rem;
+    color: #8edafc;
+}
+
 /*------------------
     COMMON
 -------------------*/
@@ -78,6 +83,27 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: #8edafc;
+    padding: .9375rem 1.25rem;
+}
+.box-alert-icon {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
+    background-color: #f2fbff;
+    line-height: 3.125rem;
+    text-align: center;
+}
+.banner-text {
+    margin-left: .625rem;
+}
+.banner-text__link {
+    color: #4f7485;
 }
 /*------------------
     MAIN
