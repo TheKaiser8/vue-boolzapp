@@ -20,7 +20,12 @@ body {
     font-size: 1.2rem;
     color: #8edafc;
 }
-
+.info-chat__name {
+    font-size: 1.1rem;
+}
+.search-bar__input {
+    font-size: 0.9rem;
+}
 /*------------------
     COMMON
 -------------------*/
@@ -84,6 +89,9 @@ aside {
     justify-content: space-between;
     align-items: center;
 }
+.info-user {
+    margin-left: 1rem;
+}
 .banner {
     display: flex;
     align-items: center;
@@ -106,7 +114,6 @@ aside {
 }
 .search-bar {
     display: flex;
-    height: 2.1875rem;
     margin: .4375rem;
 }
 .search-bar__icon {
@@ -122,6 +129,21 @@ aside {
     line-height: 2.1875rem;
     padding-left: .625rem;
     border: 1px solid #f5f5f5;
+}
+.chat-list-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.chat {
+    display: flex;
+    height: 5rem;
+    padding: .625rem 1.25rem;
+}
+.info-chat {
+    margin-left: 1.25rem;
+}
+.info-chat__text {
+    color: #c1b9c0;
 }
 /*------------------
     MAIN
