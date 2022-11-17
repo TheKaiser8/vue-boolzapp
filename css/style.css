@@ -13,7 +13,9 @@
 body {
     font-family: 'Lato', sans-serif;
 }
-
+.list-inline a {
+    font-size: 1.2rem;
+}
 /*------------------
     COMMON
 -------------------*/
@@ -32,8 +34,30 @@ body {
 }
 .box-header {
     height: 4.375rem;
+    padding: .625rem;
     background-color: #eaeaea;
 }
+.img-avatar {
+    height: 100%;
+    border-radius: 50%;
+}
+.user-nav {
+    display: flex;
+    color: #b1b1b1;
+}
+.list-inline {
+    display: flex;
+    list-style: none;
+}
+.list-inline li {
+    margin-right: 1rem;
+}
+.list-inline a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
 /*------------------
     ASIDE
 -------------------*/
@@ -44,7 +68,17 @@ aside {
     height: 100%;
     border-right: 1px solid #d6d6d6;
 }
-
+.user-avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header-chats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /*------------------
     MAIN
 -------------------*/
