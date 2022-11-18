@@ -26,6 +26,7 @@ body {
 .search-bar__input {
     font-size: 0.9rem;
 }
+
 /*------------------
     COMMON
 -------------------*/
@@ -74,7 +75,13 @@ body {
 }
 button {
     border-style: none;
+    background-color: transparent;
+    cursor: pointer;
 }
+input {
+    outline: none;
+}
+
 /*------------------
     ASIDE
 -------------------*/
