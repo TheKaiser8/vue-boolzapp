@@ -63,7 +63,7 @@
             <!-- /Form cerca chat -->
             <!-- Lista delle chat -->
             <div class="chat-list-container">
-                <div class="chat" v-for="(contact, index) in contacts">
+                <div class="chat" v-for="(contact, index) in contacts" :class="{ active : index === currentContactIndex }">
                     <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                     <div class="info-chat">
                         <span class="info-chat__name">{{ contact.name }}</span>
