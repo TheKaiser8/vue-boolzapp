@@ -80,9 +80,9 @@
             <!-- Header chat attiva -->
             <header class="box-header header-current-chat">
                 <div class="contact-avatar">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
+                    <img class="img-avatar" :src="`img/avatar${contacts[currentContactIndex].avatar}.jpg`" :alt="contacts[currentContactIndex].name">
                     <div class="info-contact">
-                        <span class="info-contact__name">Michele</span>
+                        <span class="info-contact__name">{{ contacts[currentContactIndex].name }}</span>
                         <p class="info-contact__last-access">Ultimo accesso oggi alle 12:00</p>
                     </div>
                 </div>
