@@ -63,83 +63,11 @@
             <!-- /Form cerca chat -->
             <!-- Lista delle chat -->
             <div class="chat-list-container">
-                <div class="chat active">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
+                <div class="chat" v-for="(contact, index) in contacts">
+                    <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                     <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
-                    </div>
-                    <div class="last-message">12:00</div>
-                </div>
-                <div class="chat">
-                    <img class="img-avatar" src="img/avatar_1.jpg" alt="Michele">
-                    <div class="info-chat">
-                        <span class="info-chat__name">Michele</span>
-                        <p class="info-chat__text">Ultimo messaggio inviato</p>
+                        <span class="info-chat__name">{{ contact.name }}</span>
+                        <p class="info-chat__text">{{contact.messages[contact.messages.length - 1].message }}</p>
                     </div>
                     <div class="last-message">12:00</div>
                 </div>
