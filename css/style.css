@@ -51,7 +51,7 @@ body {
     height: 100%;
     border-radius: 50%;
 }
-.user-nav {
+.user-nav, .chat-nav {
     display: flex;
     color: #b1b1b1;
 }
@@ -80,7 +80,7 @@ aside {
 }
 .user-avatar {
     display: flex;
-    justify-content: space-between;
+    flex-grow: 1;
     align-items: center;
     height: 100%;
 }
@@ -90,7 +90,7 @@ aside {
     align-items: center;
 }
 .info-user {
-    margin-left: 1rem;
+    margin-left: 0.6rem;
 }
 .banner {
     display: flex;
@@ -143,7 +143,7 @@ aside {
 .active {
     background-color: #e9ebeb;
 }
-.info-chat {
+.info-chat, .info-contact {
     flex-grow: 1;
     margin-left: 1.25rem;
 }
@@ -166,6 +166,15 @@ main {
 .chat-container {
     flex-grow: 1;
     background-image: url('../img/mine.jpg');
+}
+.header-current-chat {
+    display: flex;
+    align-items: center;
+}
+.info-contact__last-access {
+    font-size: 0.8rem;
+    color: #6b7376;
+    margin-top: .25rem;
 }
 .footer-current-chat {
     height: 4.375rem;
