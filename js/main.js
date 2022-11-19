@@ -170,5 +170,10 @@ createApp({
                 }
             ]
         }
+    },
+    methods: {
+        onClickChat(i) {
+            this.currentContactIndex = i;
+        }
     }
 }).mount('#app');
