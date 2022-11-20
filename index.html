@@ -110,8 +110,8 @@
                 <div class="emoji">
                     <button class="btn-primary"><i class="fa-regular fa-face-smile"></i></button>
                 </div>
-                <form class="send-message">
-                    <input class="send-message__input" type="text" placeholder="Scrivi un messaggio">
+                <form class="send-message" @submit.prevent="sendMessage">
+                    <input class="send-message__input" type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyup.enter="sendMessage">
                 </form>
                 <div class="microphone">
                     <button class="btn-primary"><i class="fa-solid fa-microphone"></i></button>

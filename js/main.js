@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             currentContactIndex: 0,
+            newMessage: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -172,8 +173,31 @@ createApp({
         }
     },
     methods: {
+        // Funzione per cambiare chat al click
         onClickChat(i) {
             this.currentContactIndex = i;
+        },
+        // Funzione per inviare messaggio e ottenere una risposta (dopo 1s) dal contatto attivo
+        sendMessage() {
+            const newObjMessageUser = {
+                date: '20/11/2022 15:25:55',
+                message: this.newMessage,
+                status: 'sent'
+            };
+            // Condizione di invio messaggio: se il campo input è vuoto non viene inviato alcun messaggio
+            if( this.newMessage !== '') {
+                this.contacts[this.currentContactIndex].messages.push(newObjMessageUser);
+                // Risposta del contatto dopo 1 secondo dall'invio del messaggio dell'utente
+                const newObjMessageContact = {
+                    date: '20/11/2022 15:51:00',
+                    message: 'Ok!!',
+                    status: 'received'
+                };
+                setTimeout(() => {
+                    this.contacts[this.currentContactIndex].messages.push(newObjMessageContact)
+                }, 1000)
+            }
+            this.newMessage = '';
         }
     }
 }).mount('#app');
