@@ -180,7 +180,7 @@ createApp({
         // Funzione per inviare messaggio e ottenere una risposta (dopo 1s) dal contatto attivo
         sendMessage() {
             const newObjMessageUser = {
-                date: '20/11/2022 15:25:55',
+                date: new Date,
                 message: this.newMessage,
                 status: 'sent'
             };
@@ -189,7 +189,7 @@ createApp({
                 this.contacts[this.currentContactIndex].messages.push(newObjMessageUser);
                 // Risposta del contatto dopo 1 secondo dall'invio del messaggio dell'utente
                 const newObjMessageContact = {
-                    date: '20/11/2022 15:51:00',
+                    date: new Date,
                     message: 'Ok!!',
                     status: 'received'
                 };
@@ -198,6 +198,13 @@ createApp({
                 }, 1000)
             }
             this.newMessage = '';
-        }
+        },
+        // Funzione per definire il formato data del messaggio relativo al tempo attuale (fromNow)
+        dateMessage(time) {
+            return moment(time, "DD/MM/YYYY hh:mm:ss").fromNow()
+        },
+    },
+    created() {
+        moment.locale('it');
     }
 }).mount('#app');
