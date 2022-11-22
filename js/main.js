@@ -201,8 +201,11 @@ createApp({
             this.newMessage = '';
         },
         // Funzione per definire il formato data del messaggio relativo al tempo attuale (fromNow)
+        // dateMessage(time) {
+        //     return moment(time, "DD/MM/YYYY hh:mm:ss").fromNow()
+        // },
         dateMessage(time) {
-            return moment(time, "DD/MM/YYYY hh:mm:ss").fromNow()
+            return moment(time, "DD/MM/YYYY hh:mm:ss").format('LT')
         },
         // Funzione per ricercare utenti in base alle lettere inserite nel campo input (search-bar)
         searchContact() {

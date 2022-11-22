@@ -73,7 +73,7 @@
                         <span class="info-chat__name">{{ contact.name }}</span>
                         <p class="info-chat__text">{{contact.messages[contact.messages.length - 1].message }}</p>
                     </div>
-                    <div class="last-message">12:00</div>
+                    <div class="last-message">{{ dateMessage(contact.messages[contact.messages.length - 1].date) }}</div>
                 </div>
             </div>
             <!-- /Lista delle chat -->

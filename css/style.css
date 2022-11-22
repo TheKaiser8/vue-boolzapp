@@ -170,6 +170,7 @@ aside {
     color: #c1b9c0;
 }
 .last-message, .time-message {
+    flex-shrink: 0;
     font-size: 0.7rem;
     color:#c1b9c0;
 }
