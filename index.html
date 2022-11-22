@@ -87,7 +87,7 @@
                     <img class="img-avatar" :src="`img/avatar${contacts[currentContactIndex].avatar}.jpg`" :alt="contacts[currentContactIndex].name">
                     <div class="info-contact">
                         <span class="info-contact__name">{{ contacts[currentContactIndex].name }}</span>
-                        <p class="info-contact__last-access">Ultimo accesso oggi alle 12:00</p>
+                        <p class="info-contact__last-access">Ultimo accesso oggi alle {{ dateMessage(contacts[currentContactIndex].messages[contacts[currentContactIndex].messages.length - 1].date) }}</p>
                     </div>
                 </div>
                 <div class="chat-nav">
