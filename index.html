@@ -62,12 +62,12 @@
             <!-- Form cerca chat -->
             <form class="search-bar" role="search">
                 <div class="search-bar__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="search" class="search-bar__input" placeholder="Cerca o inizia una nuova chat">
+                <input type="search" class="search-bar__input" placeholder="Cerca o inizia una nuova chat" v-model="searchChat" @keyup="searchContact">
             </form>
             <!-- /Form cerca chat -->
             <!-- Lista delle chat -->
             <div class="chat-list-container">
-                <div class="chat" v-for="(contact, index) in contacts" :class="{ active : index === currentContactIndex }" @click="onClickChat(index)">
+                <div class="chat" v-for="(contact, index) in contacts" :class="{ active : index === currentContactIndex }" @click="onClickChat(index)" v-show="contact.visible">
                     <img class="img-avatar" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                     <div class="info-chat">
                         <span class="info-chat__name">{{ contact.name }}</span>

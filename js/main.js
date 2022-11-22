@@ -7,6 +7,7 @@ createApp({
         return {
             currentContactIndex: 0,
             newMessage: '',
+            searchChat: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -203,6 +204,16 @@ createApp({
         dateMessage(time) {
             return moment(time, "DD/MM/YYYY hh:mm:ss").fromNow()
         },
+        // Funzione per ricercare utenti in base alle lettere inserite nel campo input (search-bar)
+        searchContact() {
+            this.contacts.filter(contact => {
+                if( contact.name.toLowerCase().includes(this.searchChat.toLowerCase()) ) {
+                    contact.visible = true;
+                } else {
+                    contact.visible = false;
+                }
+            })
+        }
     },
     created() {
         moment.locale('it');
