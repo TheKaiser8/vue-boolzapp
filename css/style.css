@@ -165,9 +165,13 @@ aside {
 .info-chat, .info-contact {
     flex-grow: 1;
     margin-left: 1.25rem;
+    overflow: hidden;
 }
 .info-chat__text {
     color: #c1b9c0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .last-message, .time-message {
     flex-shrink: 0;
