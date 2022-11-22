@@ -204,6 +204,7 @@ createApp({
         // dateMessage(time) {
         //     return moment(time, "DD/MM/YYYY hh:mm:ss").fromNow()
         // },
+        // Funzione per definire il formato data del messaggio: orario con ora e minuti
         dateMessage(time) {
             return moment(time, "DD/MM/YYYY hh:mm:ss").format('LT')
         },
