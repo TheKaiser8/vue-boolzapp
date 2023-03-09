@@ -222,6 +222,7 @@ main {
     max-width: 45%;
     border-radius: .625rem;
     padding: 1rem;
+    padding-bottom: 1.3rem;
     background-color: #ffffff;
     position: relative;
 }

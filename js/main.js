@@ -43,14 +43,39 @@ createApp({
                         },
                         {
                             date: '20/03/2020 16:30:55',
-                            message: 'Bene grazie! Stasera ci vediamo?',
+                            message: 'Bene grazie! Tu?',
                             status: 'received'
                         },
                         {
                             date: '20/03/2020 16:35:00',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            message: 'Anche io, tutto bene.',
                             status: 'sent'
-                        }
+                        },
+                        {
+                            date: '20/03/2020 16:37:00',
+                            message: 'Ho visto alcuni dei tuoi progetti, sai?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 16:39:55',
+                            message: 'Davvero?',
+                            status: 'received'
+                        },
+                        {
+                            date: '20/03/2020 16:45:00',
+                            message: 'Sì, ad esempio quello che replica una nota app per chattare.',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 16:46:00',
+                            message: 'Quali tecnologie hai utilizzato?',
+                            status: 'sent'
+                        },
+                        {
+                            date: '20/03/2020 17:05:55',
+                            message: 'Ho utilizzato HTML, CSS e JavaScript!',
+                            status: 'received'
+                        },
                     ],
                 },
                 {
